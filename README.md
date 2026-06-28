@@ -20,6 +20,7 @@ Prerequisites to extract from the HTTP requests (e.g., using Burp Suite):
 1. **Target URL** with a category filter: 'web-security-academy.net/filter?category=Gifts'
 2. **TrackingId** cookie value from GET request: 'WRZcL3blKj8g33lD'
 3. **Session** cookie value from GET request: 'nL2y3jQS7RGGszFBzSetHZfPfGPrOgOq'
+
 By copying these 3 elements into the Python script, it dynamically treats the application response as a "Boolean Oracle" (checking for the "Welcome back" string) to exfiltrate the full administrator password character-by-character.
 
 The script is available here: https://github.com/cialoo/PortSwigger-Academy/blob/main/portswigger-blind_sqli_oracle.py
