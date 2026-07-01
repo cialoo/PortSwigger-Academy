@@ -58,7 +58,7 @@ In this laboratory, the initial objective was to cause a 10 second delay using S
 
 Payload type -> Numbers from 1 to 50 step by 1.
 
-9. Since the free Burp applies severe rate-limiting I solved this problem by develop my own script in Python. The script is available here: xxx
+9. Since the free Burp applies severe rate-limiting I solved this problem by develop my own script in Python. The script is available here: https://github.com/cialoo/PortSwigger-Academy/blob/main/portswigger-blind_sqli_with_with_time_delays.py
 
 By executing my own script i successful login as the administrator user.
 
