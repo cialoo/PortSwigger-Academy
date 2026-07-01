@@ -32,7 +32,7 @@ The script is available here: https://github.com/cialoo/PortSwigger-Academy/blob
 In this laboratory, the initial objective was to cause a 10 second delay using SQL injection with time delays with in cookies. I curious if environment give me acces to log in to website.
 1. Triggered time delay:
    
-"'pg_sleep(10)--"
+   "'pg_sleep(10)--"
 
 2. Verified that the application could process 'case when' expressions:
 
