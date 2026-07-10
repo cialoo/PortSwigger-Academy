@@ -12,7 +12,7 @@ This repository serves as a live progress tracker.
 
 ## Lab automation
 
-**Lab: Blind SQL injection with conditional responses (Practitioner)**
+**Lab: Blind SQL injection with conditional responses**
 
 Because manual brute-forcing of a 20-character password would be miserable, I initially tried using the "Intruder" tool in Burp Suite. However, since I am using the Community Edition, the execution is artificially rate-limited and takes way too long. To bypass this performance ceiling, I decided to build my own custom automation script in Python.
 
@@ -64,7 +64,17 @@ By executing my own script i successful login as the administrator user.
 
 ##
 
+**Lab: File path traversal, simple case**
 
+The objective of this lab was to retrieve the contents of the '/etc/passwd' file. After completing the lab manually, I developed a simple Python script to automate file enumeration through the vulnerable endpoint. Instead of requesting individual files one by one, the script iterates over a custom wordlist, builds the appropriate path traversal payloads, sends HTTP requests, and displays the contents of files that are successfully retrieved.
+
+For this exercise, the wordlist contains only two common Linux files: 'etc/passwd', 'etc/hostname'.
+
+The script can easily be extended with additional file paths to automate further testing during similar path traversal exercises.
+
+The script is available here: xxx
+
+##
 
 
 
