@@ -72,7 +72,7 @@ For this exercise, the wordlist contains only two common Linux files: 'etc/passw
 
 The script can easily be extended with additional file paths to automate further testing during similar path traversal exercises.
 
-The script is available here: xxx
+The script is available here: https://github.com/cialoo/PortSwigger-Academy/blob/main/portswigger-file_path_traversal_simple_case.py
 
 ##
 
