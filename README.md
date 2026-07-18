@@ -80,7 +80,7 @@ The script is available here: https://github.com/cialoo/PortSwigger-Academy/blob
 
 In this lab, I tested reflected XSS in the search functionality protected by a Web Application Firewall (WAF) against common XSS payloads. The manual testing phase using Burp Community was very time consuming because I need to do two separate wordlist with 143 and 144 entries. To automate this process, I developed a custom Python script that sends payloads automatically and identifies which tags and attributes are accepted by the application.
 
-The script is available here: xxx
+The script is available here: https://github.com/cialoo/PortSwigger-Academy/blob/main/portswigger-reflected_xss_with_blocked_tags_and_attributes.py
 
 ##
 
