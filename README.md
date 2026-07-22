@@ -84,4 +84,12 @@ The script is available here: https://github.com/cialoo/PortSwigger-Academy/blob
 
 ##
 
+**Lab: Username enumeration via different responses**
+
+In this lab, I needed to brute-force a username and password to gain access to an account. PortSwigger provides a wordlist containing 101 usernames and 100 passwords. My first idea was to use Burp Suite Community Edition with a Cluster bomb attack. However, after seeing 10100 iterations that the attack would require, I realized it would take far too long due to the Community Edition's payload rate limiting. I decided to do my own script in Python with the same plan and the 10100 iteration. Then I realized I could first try to find the username and then try to find out which password is correct for this username. This reduced the maximum number of requests from 10100 to approximately 201. After solving the lab with my script, I also completed it manually in Burp Suite using two Sniper attacks: the first to enumerate the valid username and the second to brute-force its password.
+
+The script is available here: xxx
+
+##
+
 
