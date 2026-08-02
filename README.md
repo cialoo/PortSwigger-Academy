@@ -104,7 +104,7 @@ This lab required gaining access to Carlos's account by exploiting a flaw in the
 
 - use the new session cookie returned after successful MFA verification to access victim's account page.
 
-The script is available here: xxx
+The script is available here: https://github.com/cialoo/PortSwigger-Academy/blob/main/portswigger-2FA_broken_logic.py
 
 ##
 
