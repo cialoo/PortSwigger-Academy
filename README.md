@@ -92,4 +92,20 @@ The script is available here: https://github.com/cialoo/PortSwigger-Academy/blob
 
 ##
 
+**Lab: 2FA broken logic**
+
+This lab required gaining access to Carlos's account by exploiting a flaw in the two-factor authentication process. The vulnerability was caused by improper trust of the user-controlled parameter ('verify'). The application allowed changing the target username during the MFA verification process, which made it possible to generate and use an MFA code for another user. I noticed that the application accepted a different value of the 'verify' parameter than the one used in the login form. This allowed the application to generate an MFA code for victim (carlos) account. The next step was brute-force the four-digit MFA code. I decided to do my own script in Python because Burp in community version would be too slow. I also decided to improve performance by using threads. The script generates all possible four-digit MFA codes, sends concurrent HTTP requests and check the response status code to detect successful authentication. In this vulnerability exploit flow is probably most important and it looks like this:
+
+- modify the MFA generation request by changing the 'verify' parameter from our 'wiener' to 'carlos', this generate MFA code for victim;
+
+- run our script
+
+- submit the discovered MFA code and also change 'verify' parameter;
+
+- use the new session cookie returned after successful MFA verification to access victim's account page.
+
+The script is available here: xxx
+
+##
+
 
