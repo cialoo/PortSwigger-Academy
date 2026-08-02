@@ -6,7 +6,7 @@ This repository serves as a live progress tracker.
 
 ## Academy Progress Metrics
 
-<img width="745" height="235" alt="image" src="https://github.com/user-attachments/assets/e59b68bc-4464-49e3-8e45-5fd0add79e1d" />
+<img width="745" height="237" alt="image" src="https://github.com/user-attachments/assets/6131a1d8-9484-47fc-b9eb-948779b253c8" />
 
 ##
 
