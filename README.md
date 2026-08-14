@@ -108,4 +108,21 @@ The script is available here: https://github.com/cialoo/PortSwigger-Academy/blob
 
 ##
 
+**2FA bypass using a brute-force attack**
+
+This lab was tricky because the hardest part was understanding how the application works. Once I uderstood the authentication flow, writing my own script was actually the fun part.
+
+The main challenge was handling the CSRF token and session cookie. I had to capture them from one step and carry them the next step of the authentication process.
+
+Another thing that was easy to spot but more difficult to implement in the script was the second MFA attempt. After incorrect code, I could try the next code in the same phase witout another login process.
+
+There was another interesting thing. We don't have separate test account, so I could not easily verify what happens after submiting the correct MFA code. Everything after the successful MFA verification was effectively a black box. I had to investigate a 302 status code and that the authenticated account page is located ad /my-account.
+
+This was also important for the automation. Initially, checking whether "Incorrect security code" was present in the response seemed like an easy way to detect a failed attempt. However, this was not reliable enough, especially when running multiple threads. I therefore changed the detection logic to rely on the HTTP status code instead.
+
+Finally, I improved the script by using multithreading. The four-digit MFA code gives 10000 possible combinations, so I split the work between multiple workers.
+
+The script is available here: xxx
+
+##
 
