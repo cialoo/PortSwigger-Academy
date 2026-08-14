@@ -122,7 +122,7 @@ This was also important for the automation. Initially, checking whether "Incorre
 
 Finally, I improved the script by using multithreading. The four-digit MFA code gives 10000 possible combinations, so I split the work between multiple workers.
 
-The script is available here: xxx
+The script is available here: https://github.com/cialoo/PortSwigger-Academy/blob/main/portswigger-2FA_bypass_using_a_brute-force_attack_using_threading.py
 
 ##
 
