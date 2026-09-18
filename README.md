@@ -134,7 +134,7 @@ I added a larger wordlist from a file and loading animation. Of course, I reduce
 
 I got wordlist from: https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/common.txt
 
-The script is available here: xxx
+The script is available here: https://github.com/cialoo/PortSwigger-Academy/blob/main/portswigger-unprotected_admin_functionality.py
 
 ##
 
