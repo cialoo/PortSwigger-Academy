@@ -126,3 +126,15 @@ The script is available here: https://github.com/cialoo/PortSwigger-Academy/blob
 
 ##
 
+**Unprotected admin functionality**
+
+This lab required finding the path to administrator panel. I decided to rebuild my previous scanner: https://github.com/cialoo/Juice-Shop-Walkthrough/blob/main/recursive_api_fuzzer.py
+
+I added a larger wordlist from a file and loading animation. Of course, I reduced the depth of the script because this lab did not require recursive scanning.
+
+I got wordlist from: https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/common.txt
+
+The script is available here: xxx
+
+##
+
